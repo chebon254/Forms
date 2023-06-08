@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.contain{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+html {
+    scroll-behavior: smooth;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+nav.navigation{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-contain{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0px 10px 0px;
+}
+.nav-logo i{
+    font-size: 40px;
+    color: #8100ea;
+    margin: 0px 20px 0px 0px;
+}
+.nav-logo span{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5;
+}
+.nav-search{
+    height: 50px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+.nav-search i{
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 24px;
+    color: grey;
+}
+.nav-search input{
+    height: 50px;
+    width: 100%;
+    max-width: 600px;
+    outline: none;
+    border: 0px;
+    background-color: #f1f3f4;
+    padding: 10px 48px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.nav-search input:focus{
+    background-color: #ffffff;
+    box-shadow: 4px 2px 6px #00000033;
+}
+.nav-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px 0px;
+}
+.nav-acc img{
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+.rfm-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recent-forms{
+    background-color: #f1f3f4;
+    padding: 40px 0px;
+    height: fit-content;
+}
+.rtitle-contain p, .sftitle-contain p{
+    margin: 0px 10px 0px;
+}
+.rfm-card{
+    height: fit-content;
+    width: 100%;
+    max-width: 164px;
+    margin: 10px;
+}
+.add-icon{
+    width: 164px !important;
+    height: 123px !important;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-icon i{
+    font-size: 80px;
+    color: #000000;
+}
+.rfm-card img{
+    width: 100%;
+    height: 123px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+.rfm-card img:hover{
+    border: 1px solid #8100ea;
+}
+.rfm-card .card-title{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin: 10px 0px 0px;
+}
+.sfm-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.rcard{
+    height: fit-content;
+    width: 100%;
+    max-width: 208px;
+    margin: 10px;
+}
+.rcard-info{
+    padding: 14px;
+}
+.rcard{
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+}
+.rcard:hover{
+    border: 1px solid #8100ea;
+}
+.rcard img{
+    width: 100%;
+    height: 133px;
+}
+.rcard-info p{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    color: #000000;
+}
+.rcard-date {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rcard-date i{
+    color: #8100ea;
+    margin: 0px 6px 0px 0px;
+}
+.rcard-date span{
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #5f6368;
+}
+.stored-forms{
+    background-color: #ffffff;
+    padding: 40px 0px;
+    height: fit-content;
+}
+.rcard-timeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rcard-ctrl{
+    position: relative;
+}
+.edit-menu{
+    position: absolute;
+    bottom: 40px;
+    right: -100px;
+    height: fit-content;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px #00000033;
+    display: block;
+    padding: 5px 0px;
+    border-radius: 4px;
+}
+.hidden{
+    display: none;
+}
+.menu-setting.active{
+    display: block;
+}
+.menu-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+}
+.menu-edit i{
+    pointer-events: none;
+}
+.menu-edit:hover{
+    background-color: #dadce0;
+}
+.edit-menu button{
+    height: 40px;
+    width: 200px;
+    background-color: #ffffff;
+    outline: none;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2px 10px;
+}
+.edit-menu button:hover{
+    background-color: #dadce0;
+}
+.edit-menu button i{
+    margin: 0px 5px 0px 0px;
+}
