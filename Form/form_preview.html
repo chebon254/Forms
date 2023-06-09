@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="icon shortcut" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+  <title>Styled Select Options</title>
+  <style>
+    /* CSS Styles */
+    select {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
+    option {
+      font-size: 14px;
+      color: #333;
+    }
+
+    option:hover {
+      background-color: #f5f5f5;
+    }
+
+    option:selected {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    
+  <select>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+    <option value="option4">Option 4</option>
+  </select>
 </body>
 </html>
