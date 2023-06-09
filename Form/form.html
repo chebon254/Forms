@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon shortcut" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+
+  <!-- == Fonts == -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- == Icons == -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav-contain contain">
+          <div class="nav-logo">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Untitle Form</span>
+          </div>
+          <div class="nav-search">
+          </div>
+          <div class="nav-acc">
+            <img src="css/img/azizi.png" alt="">
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div class="contain">
+            <div class="tabbed-sections">
+                <div class="tab-buttons">
+                  <div class="tab-button active" onclick="changeTab(event, 'questions')">Questions</div>
+                  <div class="tab-button" onclick="changeTab(event, 'responses')">Responses</div>
+                  <div class="tab-button" onclick="changeTab(event, 'settings')">Settings</div>
+                </div>
+                <div id="questions" class="tab-content active">
+                    <div class="form-builder-container">
+                        <h2>Form Builder</h2>
+                        <div class="form-builder-form" id="form-builder-form">
+                          <div class="form-builder-field">
+                            <label for="field-label">Question Label:</label>
+                            <input type="text" id="field-label" name="field-label">
+                          </div>
+                          <div class="form-builder-field">
+                            <label for="field-type">Question Type:</label>
+                            <select id="field-type" name="field-type">
+                              <option value="text">Text</option>
+                              <option value="paragraph">Paragraph</option>
+                              <option value="multiple-choice">Multiple Choice</option>
+                              <option value="checkboxes">Checkboxes</option>
+                              <option value="dropdown">Dropdown</option>
+                              <option value="file">File</option>
+                              <option value="date">Date</option>
+                              <option value="time">Time</option>
+                            </select>
+                          </div>
+                          <div id="field-options" class="form-builder-field" style="display: none;">
+                            <label for="field-options-input">Options:</label>
+                            <textarea id="field-options-input" name="field-options-input"></textarea>
+                            <small>Enter each option on a new line</small>
+                          </div>
+                          <div class="form-builder-field">
+                            <button id="add-question-button">Add Question</button>
+                          </div>
+                          <div class="form-builder-field">
+                            <button id="save-form-button">Save Form</button>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <div class="form-preview-container">
+                        <h2>Form Preview</h2>
+                        <form id="generated-form"></form>
+                      </div>
+                </div>
+                <div id="responses" class="tab-content">
+                  <h2>Responses</h2>
+                  <p>This is the responses tab content.</p>
+                </div>
+                <div id="settings" class="tab-content">
+                  <h2>Settings</h2>
+                  <p>This is the settings tab content.</p>
+                </div>
+              </div>
+        </div>
+      </main>
+
+
+
+      <script src="js/script.js"></script>
+</body>
+</html>
+
+

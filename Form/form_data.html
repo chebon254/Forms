@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabbed Sections</title>
+  <link rel="icon shortcut" sizes="16x16" href="https://ssl.gstatic.com/docs/spreadsheets/forms/favicon_qp2.png">
+
+  <style>
+    /* CSS Styles */
+    .tabbed-sections {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tab-button {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      color: #000;
+    }
+
+    .tab-button.active {
+      border-bottom: 2px solid blue;
+      color: blue;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="tabbed-sections">
+    <div class="tab-buttons">
+      <div class="tab-button active" onclick="changeTab(event, 'questions')">Questions</div>
+      <div class="tab-button" onclick="changeTab(event, 'responses')">Responses</div>
+      <div class="tab-button" onclick="changeTab(event, 'settings')">Settings</div>
+    </div>
+    <div id="questions" class="tab-content active">
+      <h2>Questions</h2>
+      <p>This is the questions tab content.</p>
+    </div>
+    <div id="responses" class="tab-content">
+      <h2>Responses</h2>
+      <p>This is the responses tab content.</p>
+    </div>
+    <div id="settings" class="tab-content">
+      <h2>Settings</h2>
+      <p>This is the settings tab content.</p>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript
+    function changeTab(event, tabId) {
+      // Get all tab buttons and tab contents
+      var tabButtons = document.getElementsByClassName('tab-button');
+      var tabContents = document.getElementsByClassName('tab-content');
+
+      // Remove 'active' class from all tab buttons and tab contents
+      for (var i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove('active');
+      }
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove('active');
+      }
+
+      // Add 'active' class to the selected tab button and tab content
+      event.currentTarget.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>

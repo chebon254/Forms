@@ -242,3 +242,107 @@ nav.navigation{
 .edit-menu button i{
     margin: 0px 5px 0px 0px;
 }
+
+
+
+/* ===== TABS ====== */
+/* CSS Styles */
+    .tabbed-sections {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .tab-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .tab-button {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      color: #000;
+    }
+
+    .tab-button.active {
+      border-bottom: 2px solid blue;
+      color: blue;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+/* ===== TABS ====== */
+
+
+
+
+
+
+
+
+/* ===== FORM BUILDER ====== */
+/* CSS Styles */
+    .form-builder-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .form-builder-form {
+      margin-bottom: 20px;
+    }
+
+    .form-builder-field {
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 5px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .form-preview-container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-preview-form {
+      margin-bottom: 20px;
+    }
+
+    .form-preview-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field-value {
+      font-weight: bold;
+    }
+/* ===== FORM BUILDER ====== */
+
+
