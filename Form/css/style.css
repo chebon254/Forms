@@ -319,9 +319,10 @@ main {
 
 /* ===== TABS ====== */
 /* CSS Styles */
-.tabs{
+.tabs {
     background-color: #ffffff;
 }
+
 .tabbed-sections {
     width: 100%;
     margin: 0 auto;
@@ -408,20 +409,25 @@ body.form {
 }
 
 .form-builder-field input {
-    height: 56px;
+    height: 46px;
     width: 100%;
     max-width: 440px;
     border: 0px;
-    background-color: #dadce0;
+    background-color: #f0ebf8;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.15px;
     padding: 16px;
     outline: none;
+    border-bottom: 4px solid #8100ea00;
+}
+
+.form-builder-field input:focus {
+    border-bottom: 4px solid #8100ea;
 }
 
 .form-builder-field select {
-    height: 56px;
+    height: 46px;
     width: 220px;
     padding: 8px 48px;
     background-color: #ffffff;
@@ -434,13 +440,13 @@ body.form {
 }
 
 .bottom-builder textarea {
-    height: 60px;
+    height: 50px;
     width: 100%;
     max-width: 440px;
     border: 0px;
-    background-color: #dadce0;
+    background-color: #f0ebf8;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.15px;
     padding: 16px;
     outline: none;
@@ -484,16 +490,54 @@ button {
 #generated-form label {
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
 }
 
+#generated-form input[type='text'] {
+    height: 46px !important;
+    width: 100%;
+    max-width: 440px !important;
+    border: 0px;
+    background-color: #f0ebf8;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    padding: 16px;
+    outline: none;
+    margin: 0px 10px 0px 0px;
+}
+#generated-form input[type='file']{
+    width: fit-content !important;
+    height: fit-content;
+}
+#generated-form input[type='date'],
+#generated-form input[type='time']{
+    width: fit-content !important;
+    padding: 10px 20px;
+}
 #generated-form input {
+    height: 20px;
+    width: 20px;
+    outline: none;
+    margin: 0px 10px 0px 0px;
+}
+#generated-form select {
+    height: 46px;
+    width: 220px;
+    padding: 8px 28px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+#generated-form textarea {
     height: 50px;
     width: 100%;
     max-width: 440px;
     border: 0px;
-    background-color: #dadce0;
+    background-color: #f0ebf8;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.15px;
     padding: 16px;
     outline: none;
